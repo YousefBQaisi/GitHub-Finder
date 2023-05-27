@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link rel="stylesheet" href="compare.css" />
+    <title>VS</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="navFirst">
+        <a href="index.html"><i
+          class="fa-brands fa-github"
+          style="color: #fff; font-size: 35px; margin-right: 12px ;margin-left:10px ; padding-top: 13px ;"
+          ></i></a>
+        <div class="searchSlot">
+            <i class="fa-solid fa-magnifying-glass" style="color: #a4a5a8; padding-top: 13px; font-size: 23px;"></i>
+          <input id="search" type="search" placeholder="Type a Name"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="40"
+            aria-hidden="true"
+            class="mr-1"
+            style="padding-top: 11px;"
+            
+          >
+            <path
+              fill="none"
+              stroke="#979A9C"
+              opacity=".4"
+              d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"
+            ></path>
+            <path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path>
+          </svg>
+        </div>
+        <ul style="list-style: none">
+          <li class="PR">Pull Requests</li>
+          <li class="IS">Issues</li>
+          <li class="CS">Codespaces</li>
+          <li class="MP">Marketplace</li>
+          <li class="EX">Explore</li>
+          <li>
+            <a
+              href=""
+              id="Comparison"
+              style="text-decoration: none; color: #fff"
+              >Comparison</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="navSecond">
+        <i class="fa-solid fa-sun" style="color: #f4e648; background-color: white; border-radius: 40%; font-size: 25px;"></i>
+        <i class="fa-regular fa-bell" style="color: #f5f5f5; font-size: 25px;"></i>
+        <i class="fa-solid fa-plus" style="color: #fcfcfc;font-size: 25px;"></i>  
+        <i class="fa-solid fa-caret-down" style="color: #ffffff; font-size: 25px;"></i>
+        <img src="yousef.jpg" alt="" width="20px" height="20px" style="border-radius: 50px;border: #fcfcfc thin;">
+        <i class="fa-solid fa-caret-down" style="color: #ffffff; font-size: 25px;"></i>
+    </div>
+    </nav>
+
+    <!-- compare main content -->
+    <main class="container">
+        <div class="competitors" >
+            <div id="firstComp">
+                <img id="compImg1" src="GitHub-Mark.png" alt="" width="450vw" height="450vh" style="border-radius: 50px;border: #fcfcfc thin;">
+                
+                <div class="Results">
+                <div> <input id="enterName1" type="text" placeholder="Enter a Name">
+                   <button id="searchBtn1">
+                  <i class="fa-solid fa-magnifying-glass" style="color: #a4a5a8; padding-top: 2px; font-size: 23px;"></i>
+                </button>
+              </div>
+              <p>User: <span id="userName1"></span> </p>
+              <p>Followers: <span id="followersRes1"></span> </p>
+              <p>Repos: <span id="reposRes1"></span> </p>
+                </div>
+
+            </div>
+
+           
+
+            <div id="secondComp">
+                <img id="compImg2" src="GitHub-Mark.png" alt=""  style="border-radius: 50px;border: #fcfcfc thin;">
+                
+                <div class="Results">
+                  <div> 
+                    <input id="enterName2" type="text" placeholder="Enter a Name"> <button id="searchBtn2">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #a4a5a8; padding-top: 2px; font-size: 23px;"></i>
+                </button></div>                
+                <p>User: <span id="userName2"></span> </p>
+                <p>Followers: <span id="followersRes2"></span> </p>
+                <p>Repos: <span id="reposRes2"></span> </p>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div id="comparebtn" >
+          <button id="button">Compare</button>
+        </div>
+
+    </main>
+      
+    <footer class="container" >
+
+        <div class="FootGit">
+          <i class="fa-brands fa-github" style="color: #828997; font-size: 40px;"> </i><p>&copy 2023 GitHub, Inc.</p>
+        </div>
+
+        <div class="footItems">
+            <a href="">Terms</a>
+            <a href="">Privacy</a>
+            <a href="">Security</a>
+            <a href="">Status</a>
+            <a href="">Docs</a>
+            <a href="">Contact GitHub</a>
+            <a href="">Pricing</a>
+            <a href="">API</a>
+            <a href="">Training</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+        
+        
+        </div>
+
+    </footer>
+
+</body>
+<script src="compare.js"></script>
+</html>

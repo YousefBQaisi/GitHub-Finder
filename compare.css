@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+:root {
+    --color1: #161b22;
+    --color2: #e6e6e7;
+    --font-Segoe: "Segoe UI", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+    --white: #ffffff;
+    --blue: #88aef9;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  .container {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+
+
+  .nav{
+    display: flex;
+    background-color: var(--color1);
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  ul{
+     display: flex;
+    color: var(--white);
+    padding: 10px;
+  }
+  li{
+    display: flex;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .navFirst{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .searchSlot{
+    display: flex;
+    border: gray groove 0.5px;
+    margin-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+  }
+
+  .navSecond{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center; 
+  }
+
+/*the search bar*/
+
+  #search{
+    display: flex;
+    background-color: var(--color1);
+    border: none;
+    /* height: vh; */
+    width: 17vw;
+    margin-left: 7px;
+    margin-right: 7px;
+    align-items: center;
+    justify-content: center;  
+  }
+
+
+.competitors{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 10px ;
+
+}
+
+#firstComp{
+    padding-left: 50px;
+    padding-top: 50px ;
+    margin: 15px;
+}
+
+#compImg1{
+    margin-left: 4vw;
+
+    width:30vw ;
+    height: 50vh;
+}
+
+.Results{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; */
+    margin-left: 10vw;
+    gap: 50px;
+}
+
+#userName1{
+    padding-top: 0px;
+}
+
+#reposRes1{
+    padding-top: 10px;
+}
+
+#followersRes1{
+    padding-top: 10px;
+}
+
+
+
+#secondComp{
+    padding-left: 50px;
+    padding-top: 50px ;
+    margin: 15px;
+}
+
+#compImg2{
+    margin-left: 4vw;
+
+    width:30vw ;
+    height: 50vh;
+}
+
+
+
+#userName2{
+    padding-top: 0px;
+}
+
+#reposRes2{
+    padding-top: 10px;
+}
+
+#followersRes2{
+    padding-top: 10px;
+}
+
+
+#comparebtn{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+padding-top: 20vh;
+margin-right: 5vw;
+}
+
+#button{
+  color: white;
+  padding: 1vh; 
+  background-color: darkgoldenrod
+}
+
+#button:hover{
+  background-color: brown;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top:10px ;
+    border-top: 1px var(--color1) solid;
+    position: relative;
+    top: 10vh;
+    
+  }
+  
+  .FootGit{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+  }
+  
+  .footItems{
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    /* gap: 25px; */
+  }
+
+
+  
+  @media (max-width: 992px) and (min-width: 768px) {
+
+    body{
+      overflow-x: hidden;
+    }
+    .nav{
+      width: 100% ;
+    }
+
+ .PR{
+      display: none;
+    }
+
+    .IS{
+      display: none;
+    }
+
+    .CS{
+      display: none;
+    }
+
+    .MP{
+      display: none;
+    }
+
+    .EX{
+      display: none;
+    }
+
+    .searchSlot{
+      width: 200px;
+      
+    }
+
+    /* #search{
+      padding-left: 120px;
+    } */
+
+    #Comparison{
+      padding-left: 80px;
+    }
+
+    .navSecond{
+      display: none;
+    }
+   
+
+    #firstComp{
+      width:90% ;
+      padding-right: 100px;
+      padding-left: 120px;
+    }
+
+    #secondComp{
+      width:90% ;
+      padding-right: 100px;
+      padding-left: 120px;
+    }
+
+    #compImg1{
+      width:100% ;
+      height: 70%;
+  }
+
+  #compImg2{
+    width:100% ;
+    height: 70%;
+}
+
+.footItems{
+  display: none;
+}
+
+.competitors{
+  grid-template-columns: 1fr;
+  grid-template-rows: 50vh
+  }
+
+  .container{
+    margin-left: 10px;
+  }
+
+  #comparebtn{
+    margin-top: 0px;
+
+  }
+
+  }
+
+  @media (max-width: 768px) {
+    
+    body{
+      overflow-x: hidden;
+    }
+    .nav{
+      width: 100% ;
+    }
+
+ .PR{
+      display: none;
+    }
+
+    .IS{
+      display: none;
+    }
+
+    .CS{
+      display: none;
+    }
+
+    .MP{
+      display: none;
+    }
+
+    .EX{
+      display: none;
+    }
+
+    .searchSlot{
+      width: 170px;
+      
+    }
+
+    .navSecond{
+      display: none;
+    }
+   
+
+    #firstComp{
+      width:90% ;
+      padding-right: 100px;
+      padding-left: 10px;
+    }
+
+    #secondComp{
+      width:90% ;
+      padding-right: 100px;
+      padding-left: 10px;
+    }
+
+    #compImg1{
+      width:100% ;
+      height: 70%;
+  }
+
+  #compImg2{
+    width:100% ;
+    height: 70%;
+}
+
+.footItems{
+  display: none;
+}
+
+.competitors{
+  grid-template-columns: 1fr;
+  grid-template-rows: 50vh
+  }
+
+  .container{
+    margin-left: 10px;
+  }
+
+}
+  
